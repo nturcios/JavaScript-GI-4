@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    button {
+      padding: 1rem;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-white {
+      background-color: white;
+    }
+    </style>
+</head>
+<body>
+    <button onclick="changeTheBackground('bg-red')">
+        Push for red!
+      </button>
+      <button onclick="changeTheBackground('bg-white')">
+        Push for white!
+      </button>
+      <script>
+       // Do Stuff Here
+       window.changeTheBackground = function(className) {
+          if (className === "bg-red"){
+              return document.body.className = 'bg-red';
+          } else if (className === "bg-white"){
+              return document.body.className = 'bg-white';
+          }
+       }
+      </script>
+ 
+
+</body>
+</html>
